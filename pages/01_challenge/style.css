@@ -1,0 +1,16 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #1dd1a1, #54a0ff);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: scale(0.8);
+}
