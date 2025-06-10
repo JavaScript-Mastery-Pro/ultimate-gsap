@@ -23,6 +23,7 @@ export default defineConfig({
           __dirname,
           "pages/04_learn-fromto/index.html"
         ),
+        "04_challenge": resolve(__dirname, "pages/04_challenge/index.html"),
       },
     },
   },
