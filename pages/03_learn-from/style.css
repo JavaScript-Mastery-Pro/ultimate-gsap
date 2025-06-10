@@ -1,9 +1,10 @@
 .container {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  min-height: 90vh;
+  flex-direction: row;
 }
 
 .card {

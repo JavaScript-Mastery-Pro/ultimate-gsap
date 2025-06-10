@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@layer components {
+@layer base {
   code {
     @apply font-mono text-sm bg-zinc-900 text-orange-400 p-1;
   }
@@ -10,7 +10,7 @@
   }
 
   main {
-    @apply mx-auto max-w-3xl ring-1 bg-zinc-900 ring-zinc-300/20 xl:max-w-5xl min-h-screen p-10;
+    @apply mx-auto max-w-3xl ring-1 bg-zinc-900 ring-zinc-300/20 xl:max-w-5xl min-h-screen p-10 flex flex-col;
   }
 
   a {
@@ -19,5 +19,27 @@
 
   button {
     @apply bg-slate-500 hover:bg-slate-600 text-zinc-50 px-4 py-2 rounded-md;
+  }
+}
+
+@layer components {
+  .container {
+    @apply flex-1 flex items-center justify-center flex-col;
+  }
+
+  .heading {
+    @apply flex flex-row items-baseline gap-5;
+
+    img {
+      @apply size-5;
+    }
+
+    div {
+      @apply flex-1;
+    }
+
+    p {
+      @apply text-gray-500 mt-5;
+    }
   }
 }
