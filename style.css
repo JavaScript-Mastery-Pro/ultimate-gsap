@@ -98,7 +98,7 @@
   }
 
   .demo {
-    @apply bg-[#11142b] w-full px-10 pb-20 pt-28 rounded-3xl min-h-[500px] relative overflow-hidden;
+    @apply bg-[#11142b] w-full px-10 py-20  rounded-3xl min-h-[500px] relative overflow-hidden;
 
     .repeat {
       @apply size-12 rounded-[10px] flex items-center justify-center bg-[#22274A] absolute top-3 right-3 z-0 cursor-pointer;

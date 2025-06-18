@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Gsap Timeline</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header class="nav">
+        <a href="/">
+          <img src="/public/logo.svg" alt="logo" />
+        </a>
+        <a href="https://jsmastery.com/all-courses" target="_blank"
+          >GSAP Course</a
+        >
+      </header>
+
+      <div class="content">
+        <div class="arrow">
+          <a href="../../index.html">
+            <img src="/public/arrow.svg" alt="arrow" />
+          </a>
+        </div>
+
+        <section>
+          <h1>Learn Gsap Timeline</h1>
+
+          <p>
+            The <code>gsap.timeline()</code> method is used to create a timeline
+            instance that sequences multiple animations in a controlled and
+            synchronized manner.
+          </p>
+
+          <p>
+            A timeline allows developers to chain animations using methods such
+            as <code>.to()</code>, <code>.from()</code>, and
+            <code>.fromTo()</code>, enabling precise control over the order and
+            timing of each animation step.
+          </p>
+
+          <p>
+            Unlike standalone GSAP animations, which run independently, a
+            timeline groups animations together, allowing for centralized
+            playback control using methods like <code>.play()</code>,
+            <code>.pause()</code>, <code>.reverse()</code>, and
+            <code>.restart()</code>.
+          </p>
+
+          <p>
+            Timelines also support features such as relative positioning,
+            overlapping animations using time offsets, labels for navigation,
+            and nesting of other timelines, making them ideal for complex
+            animation sequences.
+          </p>
+
+          <p>
+            Read more about the
+            <a
+              href="https://gsap.com/resources/getting-started/timelines"
+              target="_blank"
+              >Gsap Timeline</a
+            >
+            method.
+          </p>
+        </section>
+      </div>
+
+      <div class="demo flex-center">
+        <section>
+          <div class="cards">
+            <div class="card" data-id="1">
+              <img
+                src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2940&auto=format&fit=crop"
+                alt="image"
+              />
+              <div class="info">
+                <h3>Swiss Alps</h3>
+                <p>Zermatt, Switzerland</p>
+                <p><strong>$1,200</strong> per person</p>
+              </div>
+            </div>
+
+            <div class="card" data-id="2">
+              <img
+                src="https://images.unsplash.com/photo-1491466424936-e304919aada7?q=80&w=2969&auto=format&fit=crop"
+                alt="image"
+              />
+              <div class="info">
+                <h3>Mount Fuji</h3>
+                <p>Honshu, Japan</p>
+                <p><strong>$980</strong> per person</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-page" id="detailPage">
+            <button class="close-btn" id="closeBtn">×</button>
+            <img
+              src=""
+              alt="Detail Image"
+              class="detail-image"
+              id="detailImage"
+            />
+            <div class="detail-content" id="detailContent">
+              <h2 id="detailTitle">Detail Page</h2>
+              <p id="detailDescription">
+                This is the full-page view of the travel destination. Discover
+                breathtaking views, unforgettable experiences, and a trip of a
+                lifetime. Customize the description to match your offer.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- GSAP CDN -->
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+      <script type="module" src="script.js"></script>
+    </main>
+  </body>
+</html>
