@@ -4,17 +4,26 @@ reactions.addEventListener("click", (e) => {
   if (!e.target.matches("button")) return;
 
   const emoji = e.target.dataset.emoji;
-  const rect = e.target.getBoundingClientRect();
+  const buttonRect = e.target.getBoundingClientRect();
+  const reactionsRect = reactions.getBoundingClientRect();
 
   const bubble = document.createElement("div");
   bubble.classList.add("bubble");
   bubble.textContent = emoji;
 
-  // Place bubble near button
-  bubble.style.left = `${rect.left + rect.width / 2}px`;
-  bubble.style.top = `${rect.top}px`;
-
   document.body.appendChild(bubble);
+
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+
+  // X: center of the clicked button
+  const bubbleX = buttonRect.left + buttonRect.width / 2 + scrollLeft;
+
+  // Y: top of the reactions container
+  const bubbleY = reactionsRect.top + scrollTop;
+
+  bubble.style.left = `${bubbleX}px`;
+  bubble.style.top = `${bubbleY}px`;
 
   // Animate
   const xOffset = gsap.utils.random(-50, 50);

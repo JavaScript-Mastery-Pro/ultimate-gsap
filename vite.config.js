@@ -11,20 +11,20 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        "01_your-first-animation": resolve(
+        "01a_your-first-animation": resolve(
           __dirname,
-          "pages/01_your-first-animation/index.html"
+          "pages/01a_your-first-animation/index.html"
         ),
-        "01_challenge": resolve(__dirname, "pages/01_challenge/index.html"),
-        "02_learn-to": resolve(__dirname, "pages/02_learn-to/index.html"),
-        "02_challenge": resolve(__dirname, "pages/02_challenge/index.html"),
-        "03_learn-from": resolve(__dirname, "pages/03_learn-from/index.html"),
-        "03_challenge": resolve(__dirname, "pages/03_challenge/index.html"),
-        "04_learn-fromto": resolve(
+        "01b_challenge": resolve(__dirname, "pages/01b_challenge/index.html"),
+        "02a_learn-to": resolve(__dirname, "pages/02a_learn-to/index.html"),
+        "02b_challenge": resolve(__dirname, "pages/02b_challenge/index.html"),
+        "03a_learn-from": resolve(__dirname, "pages/03a_learn-from/index.html"),
+        "03b_challenge": resolve(__dirname, "pages/03b_challenge/index.html"),
+        "04a_learn-fromto": resolve(
           __dirname,
-          "pages/04_learn-fromto/index.html"
+          "pages/04a_learn-fromto/index.html"
         ),
-        "04_challenge": resolve(__dirname, "pages/04_challenge/index.html"),
+        "04b_challenge": resolve(__dirname, "pages/04b_challenge/index.html"),
       },
     },
   },

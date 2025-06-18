@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header class="nav">
+        <img src="/public/logo.svg" alt="logo" />
+        <a href="https://jsmastery.com/all-courses" target="_blank"
+          >GSAP Course</a
+        >
+      </header>
+
+      <div class="content">
+        <div class="arrow">
+          <a href="../../index.html">
+            <img src="/public/arrow.svg" alt="arrow" />
+          </a>
+        </div>
+
+        <section>
+          <h1>Challenge 02</h1>
+          <p>
+            After learning how to animate a single toast notification in the
+            Learn GsapTo lesson, it’s time to take things a step further.
+          </p>
+          <p>
+            Challenge yourself to create a sequence of toasts that appear one
+            after another. Just like real notification systems do. Each toast
+            should rise up, grab attention, and slide away before the next one
+            enters.
+          </p>
+          <p>
+            Read more about the
+            <a
+              href="https://greensock.com/docs/v3/GSAP/gsap.to()"
+              target="_blank"
+              >gsap.to()</a
+            >
+            method.
+          </p>
+        </section>
+      </div>
+
+      <div class="demo flex-center">
+        <div class="toast one">🔔 You’ve got 99 problems</div>
+        <div class="toast two">🎉 And 101 merge conflicts</div>
+      </div>
+
+      <!-- GSAP CDN -->
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+      <script type="module" src="script.js"></script>
+    </main>
+  </body>
+</html>
