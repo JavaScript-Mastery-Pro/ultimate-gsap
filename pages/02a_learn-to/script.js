@@ -1,3 +1,5 @@
+import gsap from "gsap";
+
 function showToastLoop() {
   gsap.to(".toast", {
     y: -120,

@@ -1,3 +1,5 @@
+import gsap from "gsap";
+
 const card = document.getElementById("card");
 let flipped = false;
 

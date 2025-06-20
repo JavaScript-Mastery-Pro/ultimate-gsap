@@ -1,3 +1,5 @@
+import gsap from "gsap";
+
 const reactions = document.querySelector(".reactions");
 
 reactions.addEventListener("click", (e) => {

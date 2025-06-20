@@ -1,3 +1,5 @@
+import gsap from "gsap";
+
 const repeat = document.querySelector(".repeat");
 
 const animation = gsap.from(".card", {

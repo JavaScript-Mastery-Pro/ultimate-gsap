@@ -1,3 +1,5 @@
+import gsap from "gsap";
+
 let currentToast = 0;
 const toasts = [".toast.one", ".toast.two"];
 

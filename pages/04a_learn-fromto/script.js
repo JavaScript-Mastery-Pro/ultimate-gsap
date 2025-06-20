@@ -1,3 +1,5 @@
+import gsap from "gsap";
+
 const bars = document.querySelectorAll(".bar");
 
 bars.forEach((bar, index) => {

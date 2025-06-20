@@ -1,3 +1,5 @@
+import gsap from "gsap";
+
 const cards = document.querySelectorAll(".card");
 const cardsContainer = document.querySelector(".cards");
 const detailPage = document.getElementById("detailPage");
