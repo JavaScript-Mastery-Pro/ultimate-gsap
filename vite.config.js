@@ -25,6 +25,10 @@ export default defineConfig({
           "pages/04a_learn-fromto/index.html"
         ),
         "04b_challenge": resolve(__dirname, "pages/04b_challenge/index.html"),
+        "05a_learn-timeline": resolve(
+          __dirname,
+          "pages/05a_learn-timeline/index.html"
+        ),
       },
     },
   },
