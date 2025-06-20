@@ -45,6 +45,7 @@ export default defineConfig({
           __dirname,
           "pages/10a_expo-easing/index.html"
         ),
+        "11a_apple-dock": resolve(__dirname, "pages/11a_apple-dock/index.html"),
       },
     },
   },
