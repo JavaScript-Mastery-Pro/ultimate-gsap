@@ -29,6 +29,22 @@ export default defineConfig({
           __dirname,
           "pages/05a_learn-timeline/index.html"
         ),
+        "07a_sine-easing": resolve(
+          __dirname,
+          "pages/07a_sine-easing/index.html"
+        ),
+        "08a_back-easing": resolve(
+          __dirname,
+          "pages/08a_back-easing/index.html"
+        ),
+        "09a_elastic-easing": resolve(
+          __dirname,
+          "pages/09a_elastic-easing/index.html"
+        ),
+        "10a_expo-easing": resolve(
+          __dirname,
+          "pages/10a_expo-easing/index.html"
+        ),
       },
     },
   },
