@@ -1,12 +1,16 @@
 import gsap from "gsap";
 
+const content = document.querySelector(".content section");
+
 const cards = document.querySelectorAll(".card");
 const cardsContainer = document.querySelector(".cards");
+
 const detailPage = document.getElementById("detailPage");
 const detailImage = document.getElementById("detailImage");
 const detailTitle = document.getElementById("detailTitle");
 const detailDescription = document.getElementById("detailDescription");
 const detailContent = document.getElementById("detailContent");
+
 const closeBtn = document.getElementById("closeBtn");
 
 const destinations = {
@@ -53,6 +57,15 @@ cards.forEach((card) => {
     tl = gsap.timeline({
       defaults: { ease: "power3.inOut" },
     });
+
+    tl.to(
+      content,
+      {
+        opacity: 0,
+        duration: 0.4,
+      },
+      0
+    );
 
     tl.to(
       cardsContainer,
@@ -104,6 +117,13 @@ cards.forEach((card) => {
 closeBtn.addEventListener("click", () => {
   detailPage.style.display = "none";
   detailContent.style.opacity = 0;
+
+  gsap.to(content, {
+    opacity: 1,
+    duration: 0.5,
+    ease: "power2.out",
+  });
+
   gsap.to(cardsContainer, {
     opacity: 1,
     duration: 0.5,

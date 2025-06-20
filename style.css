@@ -6,6 +6,12 @@
   --font-geist: "Geist", sans-serif;
 }
 
+* {
+  /* Change scrollbar color to black */
+  scrollbar-color: black;
+  scrollbar-width: thin;
+}
+
 @layer base {
   body {
     @apply font-geist;
