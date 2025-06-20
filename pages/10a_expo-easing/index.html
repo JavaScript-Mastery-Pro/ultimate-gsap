@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn Gsap Elastic Easing</title>
+    <title>Learn Gsap Expo Easing</title>
     <link rel="stylesheet" href="../../style.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -26,20 +26,23 @@
         </div>
 
         <section>
-          <h1>Elastic Easing</h1>
+          <h1>Expo Easing</h1>
 
           <p>
-            Elastic easing in GSAP creates a bouncy, spring-like motion that
-            overshoots and oscillates before settling into place.
+            Expo easing in GSAP creates dramatic animations that start or end
+            extremely fast or slow, mimicking exponential acceleration or
+            deceleration.
           </p>
 
           <p>
-            It mimics the effect of pulling and releasing a rubber band, making
-            animations feel dynamic and playful.
+            It's perfect for effects that need a powerful burst or a sharp,
+            smooth finish.
           </p>
           <p>
-            Variants like elastic.in, elastic.out, and elastic.inOut control how
-            and when the bounce occurs.
+            The `expo.in` variant begins slowly and speeds up rapidly, ideal for
+            building tension. `expo.out` starts with a burst of speed and slows
+            dramatically, perfect for clean, techy finishes. `expo.inOut`
+            combines both, delivering an intense, cinematic feel.
           </p>
 
           <p>
@@ -53,13 +56,14 @@
         </section>
       </div>
 
-      <div class="demo bg-amber-50">
-        <button class="repeat">
-          <img src="/public//repeat.svg" alt="repeat" />
-        </button>
-
-        <section class="flex-center">
-          <div id="chart"></div>
+      <div class="demo flex-center">
+        <section>
+          <div class="fab-container">
+            <button class="fab-child">🥚</button>
+            <button class="fab-child">🧀</button>
+            <button class="fab-child">🍩</button>
+            <button class="fab">＋</button>
+          </div>
         </section>
       </div>
 

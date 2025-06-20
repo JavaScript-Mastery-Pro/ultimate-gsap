@@ -1,0 +1,39 @@
+.fab-container {
+  position: relative;
+}
+
+.fab,
+.fab-child {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-size: 24px;
+  background: #0984e3;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+}
+
+.fab-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0) scale(0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fab-child:nth-child(1) {
+  background: #00b894;
+}
+.fab-child:nth-child(2) {
+  background: #fd79a8;
+}
+.fab-child:nth-child(3) {
+  background: #e17055;
+}
