@@ -1,0 +1,14 @@
+.gsap-box {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #fd79a8, #e84393);
+  color: white;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  opacity: 1;
+}
