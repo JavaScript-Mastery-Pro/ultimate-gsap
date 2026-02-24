@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..800&display=swap");
+
+main {
+  background: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  position: relative;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* this is the key point */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  border-radius: 3rem;
+  width: 30rem;
+  height: 33rem;
+  overflow: hidden;
+  padding-top: 4.5rem;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.card1 {
+  background-color: #f2f1f3;
+  transform: translateY(0);
+}
+
+.card2 {
+  background-color: #00b2ff;
+  transform: translateY(110%);
+}
+
+.card3 {
+  background-color: #a981ff;
+  transform: translateY(210%);
+}
+
+.content {
+  padding: 0 5rem;
+}
+
+h3 {
+  background: #fff;
+  width: fit-content;
+  padding: 0.3rem 0.5rem;
+  font-weight: 500;
+}
+
+p {
+  text-wrap: pretty;
+  color: #fff;
+  font-weight: 400;
+}
+
+.card1 h3 {
+  background: #000;
+  color: #fff;
+}
+.card1 p {
+  color: #6e6e73;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+video {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(0.8);
+  border-radius: 1rem;
+}
+
+span {
+  font-size: 20rem;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, #140726, #711de2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 16rem;
+  font-weight: 800;
+  letter-spacing: -0.64rem;
+  line-height: 150%;
+  padding: 0 1rem;
+}
+
+.spacer {
+  height: 100dvh;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge {
+  background-color: #f2f1f3;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+}
+
+.text-content h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 0.01rem;
+  max-width: 50rem;
+  text-align: center;
+  color: black;
+}
+
+.text-content p {
+  color: black;
+  font-size: 1.3rem;
+  max-width: 30rem;
+  text-align: center;
+}

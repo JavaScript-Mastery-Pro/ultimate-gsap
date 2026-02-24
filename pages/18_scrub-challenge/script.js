@@ -19,6 +19,7 @@ gsap.to(element, {
       gsap.to(element, {
         x: `+=${50 * direction}`,
         duration: 0.8,
+        ease: "none",
       });
     },
   },
@@ -40,6 +41,7 @@ gsap.to(element2, {
       gsap.to(element2, {
         x: `-=${50 * direction}`,
         duration: 0.8,
+        ease: "none",
       });
     },
   },
@@ -61,6 +63,7 @@ gsap.to(element3, {
       gsap.to(element3, {
         x: `+=${50 * direction}`,
         duration: 0.8,
+        ease: "none",
       });
     },
   },
