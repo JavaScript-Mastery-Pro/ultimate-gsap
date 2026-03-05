@@ -1,0 +1,667 @@
+@import url("https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@font-face {
+  font-family: "HolenVintage";
+  src: url("/teh-tarik/font/Holen Vintage Font/HolenVintageRegular-vmzq9.otf");
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #f9c822;
+  color: #282425;
+  width: 100dvw;
+  overflow-x: hidden;
+  font-family: "HolenVintage";
+}
+
+body::-webkit-scrollbar {
+  width: 0.5vw;
+}
+body::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 4px;
+}
+body::-webkit-scrollbar-track {
+  background: white;
+}
+
+.hero-container {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ff9720;
+}
+
+.top-part {
+  min-height: 100dvh;
+}
+
+.top-pattern {
+  height: max(30px, 4vw);
+  width: 100%;
+  background-image: url("/teh-tarik/images/red-yellow-pattern.svg");
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.hero-container p {
+  font-size: 1.3rem;
+  max-width: 30vw;
+  margin: 2vw auto 5vw;
+  text-align: center;
+  font-family: "Niramit", sans-serif;
+}
+
+.hero-container svg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  overflow: visible;
+  transform: translate(0, 40vh);
+}
+
+.bottom-part {
+  display: flex;
+  border: 1px solid black;
+  height: 30vh;
+}
+
+.yellow-box {
+  width: 50%;
+  background-color: #f9c822;
+}
+
+.pink-box {
+  width: 50%;
+  background-color: #f6a4af;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pink-box p {
+  position: absolute;
+  right: 15%;
+  font-size: 2rem;
+  max-width: 30%;
+  font-family: "Niramit", sans-serif;
+}
+
+.tea-img {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  bottom: -7%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#text {
+  display: block;
+  white-space: nowrap;
+}
+
+#textpath {
+  font-size: max(150px, 10.42vw);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -4px;
+  margin: 0;
+  overflow: hidden;
+  color: #282425;
+  fill: #282425;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  white-space: inherit;
+}
+
+.scroll-container {
+  width: 225dvw;
+  display: flex;
+  height: 100dvh;
+  will-change: transform;
+  position: relative;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.left-box {
+  flex-shrink: 0;
+  padding: 7vw;
+  width: 100dvw;
+  height: 100%;
+  background-image: url("/teh-tarik/images/recognise-green-bg.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.left-box .content-box {
+  position: relative;
+  background-color: #f9c822;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  transform: rotate(-3deg);
+  margin: 2rem 0 0 2rem;
+}
+
+.left-box .content-box::before {
+  content: "";
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/teh-tarik/images/typewriter-box-top-corner.svg");
+  top: -1.9vw;
+  left: 0;
+  height: 2vw;
+  width: 3.19vw;
+  position: absolute;
+}
+
+.left-box .content-box h1 {
+  font-size: 4rem;
+  margin-right: 10vw;
+  margin-bottom: 1rem;
+  color: #282425;
+}
+
+.left-box .content-box p {
+  font-size: 0.7rem;
+}
+
+.left-box .content-box img {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  object-fit: cover;
+}
+
+.middle-box {
+  width: 25vw;
+  height: 100vh;
+  background-image: url("/teh-tarik/images/recognise-mid-bg.webp");
+  background-size: cover;
+}
+
+.man {
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 20%;
+  object-fit: cover;
+  will-change: transform;
+}
+
+.right-box {
+  flex-shrink: 0;
+  padding: 7vw 0 7vw 25vw;
+  width: 100dvw;
+  height: 100%;
+  background-image: url("/teh-tarik/images/recognise-yellow-bg.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.right-box .content-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-box h1 {
+  font-size: 7rem;
+  line-height: 0.9;
+  margin-bottom: 1rem;
+  color: #282425;
+}
+
+.right-box p {
+  font-size: 0.7rem;
+}
+
+.spacer {
+  height: 100dvh;
+}
+
+.color-change-container {
+  height: 100dvh;
+  position: relative;
+  overflow: hidden;
+}
+
+.color-change-container h1 {
+  font-size: 9rem !important;
+  line-height: 0.9;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #282425;
+}
+
+.first-box,
+.sec-box,
+.third-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+  padding-top: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.first-box {
+  background-color: #34a357;
+}
+
+.sec-box {
+  background-color: #d6322f;
+  clip-path: circle(0% at 50% 100%);
+}
+
+.third-box {
+  background-color: #f9c822;
+  clip-path: circle(0% at 50% 100%);
+}
+
+.img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cup {
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  width: 22.5%;
+  transform: translateX(-50%);
+  object-fit: cover;
+  z-index: 2;
+}
+
+.mountains {
+  position: absolute;
+  bottom: 0;
+  object-fit: cover;
+}
+
+.yellow-mountain {
+  width: 85%;
+  left: 0;
+  z-index: 1;
+}
+
+.purple-mountain {
+  width: 75%;
+  right: 0;
+}
+
+.small-images-container {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.small-images-container img {
+  position: absolute;
+  bottom: -10%;
+  animation: floatRotate 10s ease-in-out infinite;
+  will-change: transform;
+}
+
+.small-images-container img:nth-child(1) {
+  width: 13%;
+  bottom: 5%;
+  left: 20%;
+}
+
+.small-images-container img:nth-child(2) {
+  bottom: 10%;
+  left: 5%;
+}
+
+.small-images-container img:nth-child(3) {
+  bottom: 15%;
+  width: 13%;
+  right: 15%;
+  transform: rotate(-20deg);
+}
+
+.small-images-container .img4 {
+  bottom: -50%;
+  left: 20%;
+}
+
+.small-images-container .img5 {
+  bottom: -50%;
+  right: 25%;
+}
+
+.small-images-container .img6 {
+  bottom: -50%;
+  right: 5%;
+}
+
+.small-images-container .img7 {
+  bottom: -50%;
+  right: 20%;
+}
+
+.small-images-container .img8 {
+  bottom: -50%;
+  left: 5%;
+}
+
+.small-images-container .img9 {
+  bottom: -50%;
+  left: 20%;
+}
+
+.proud-container {
+  background-color: #ed9fa5;
+  overflow: hidden;
+  padding-bottom: 10vh;
+}
+
+.proud-container .content-box {
+  padding: 7vw;
+}
+
+.proud-container .content-box h1 {
+  font-size: 12rem;
+  line-height: 0.9;
+  margin-bottom: 1rem;
+  color: #282425;
+}
+
+.proud-container .content-box p {
+  font-size: 1.5rem;
+}
+
+.proud-container .img-box {
+  position: relative;
+  height: 100lvh;
+  width: 100dvw;
+}
+
+.left-hand,
+.right-hand {
+  position: absolute;
+  top: 0;
+  height: 62.36vw;
+  width: 50.1vw;
+  object-fit: contain;
+}
+
+.left-hand {
+  left: -10vw;
+}
+
+.right-hand {
+  right: -10vw;
+}
+
+.touching-star {
+  position: absolute;
+  z-index: 1;
+  top: -5%;
+  left: 50%;
+  translate: none;
+  rotate: none;
+  scale: none;
+  transform: translate3d(-264px, 106.4px, 0px) scale(0, 0);
+}
+
+.proud-container .sec-content-box {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 3vw;
+  max-width: 60vw;
+  margin-left: 7vw;
+  transform: translateY(-10vh);
+}
+
+.proud-container .sec-content-box p {
+  font-size: 1.7rem;
+}
+
+.footer {
+  min-height: 90vh;
+}
+
+.ttn-logo {
+  background-color: white;
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ttn-logo img {
+  width: 90%;
+  object-fit: contain;
+}
+
+.footer .info-box {
+  display: flex;
+  min-height: 30vh;
+}
+
+.footer .info-box > * {
+  flex: 1;
+}
+
+.footer .info-box .item {
+  padding: 2rem;
+  text-transform: uppercase;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer .info-box .item img {
+  width: 20%;
+  object-fit: contain;
+}
+
+.footer .info-box .first-item {
+  background-color: #8085b4;
+  font-size: 2rem;
+  padding-left: 5vw;
+}
+
+.footer .info-box .sec-item {
+  background-color: #f9c822;
+  font-size: 1.5rem;
+}
+
+.footer .info-box .third-item {
+  background-color: #d6322f;
+  font-size: 1.5rem;
+}
+
+.footer .info-box .fourth-item {
+  background-color: #009949;
+  font-size: 1.5rem;
+}
+
+.copy-right-box {
+  display: flex;
+  align-items: center;
+  padding: 2rem 5vw;
+  background-color: #f6d3b3;
+  font-family: "Niramit", sans-serif;
+}
+
+.copy-right-box .icon-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.copy-right-box .message-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.side-bars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+}
+
+.left-side,
+.right-sidebar {
+  background: white;
+  display: flex;
+  /* align-items: center; */
+  width: 100lvh;
+  height: 3.47vw;
+  rotate: 90deg;
+  transform-origin: top left;
+  transform: translateY(-100%);
+}
+
+.left-side div {
+  border: 2px solid black;
+}
+
+.left-side div:nth-child(2) {
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.left-side img:first-child {
+  padding: 6px 13px;
+}
+
+.left-side h1 {
+  height: 100%;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: nowrap;
+  font-family: "Niramit", sans-serif;
+  color: #282425;
+}
+
+.lightgreen-yellow-bg {
+  height: 100%;
+  flex: 1;
+  background-color: #00a64e;
+  background-image: url("/teh-tarik/images/yellow-pattern.svg");
+}
+
+.right-sidebar {
+  transform: translateY(calc(8px - 100vw));
+  position: absolute;
+  top: 0;
+  border: 2px solid black;
+}
+
+.right-sidebar a {
+  padding: 0 40px;
+  display: flex;
+  gap: 40px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-sidebar a:last-of-type,
+.right-sidebar .green-yellow-bg,
+.right-sidebar .pink-purple-bg {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+a,
+a:hover {
+  color: #282425;
+  text-decoration: none;
+}
+
+.right-sidebar .yellow-lightgreen-bg {
+  flex: 2;
+  height: 100%;
+}
+
+.yellow-lightgreen-bg {
+  background-color: #f9c822;
+  background-image: url("/teh-tarik/images/lightgreen-pattern.svg");
+}
+
+.right-sidebar .green-yellow-bg,
+.right-sidebar .lightblue-purple-bg {
+  flex: 1;
+  height: 100%;
+}
+.green-yellow-bg {
+  background-image: url("/teh-tarik/images/lightgreen-pattern.svg");
+  /* background-color: #00a64e; */
+}
+.lightblue-purple-bg {
+  background-color: #8fd4d5;
+  background-image: url("/teh-tarik/images/purple-pattern.svg");
+}
+.right-sidebar .pink-purple-bg {
+  flex: 3;
+  height: 100%;
+}
+.pink-purple-bg {
+  background-color: #f6a4af;
+  background-image: url("/teh-tarik/images/purple-pattern.svg");
+}
+
+@keyframes floatRotate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+/* Normal Laptop (1025px to 1439px) */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .first-box,
+  .sec-box,
+  .third-box {
+    font-size: 3.5rem;
+  }
+}
