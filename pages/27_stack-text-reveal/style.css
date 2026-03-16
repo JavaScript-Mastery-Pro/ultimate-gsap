@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+main {
+  font-family: "Open Sans", sans-serif;
+}
+
+.stack {
+  height: 80vh;
+  overflow: hidden;
+  background: #3b5bff;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.stacked-text {
+  color: white;
+  font-size: 12vw;
+  line-height: 0.8;
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.line {
+  display: block;
+  overflow: hidden;
+}
+
+.line span {
+  display: inline-block;
+  transform: translateY(120%) scale(1.2);
+  will-change: transform;
+}
