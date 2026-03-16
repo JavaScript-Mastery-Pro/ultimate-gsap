@@ -1,9 +1,9 @@
 import gsap from "gsap";
 
-gsap.to(".line span", {
-  y: 0,
-  scaleY: 1,
-  skewY: 0,
+gsap.from(".line span", {
+  yPercent: 150,
+  scaleY: 1.5,
+  skewY: 5,
   duration: 1.3,
   ease: "expo.out",
   stagger: {
