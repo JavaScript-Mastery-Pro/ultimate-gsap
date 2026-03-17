@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&display=swap");
+
+main {
+  background: #0e0f14;
+  color: white;
+  font-family: "Epilogue", sans-serif;
+}
+
+.demo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0e0f14;
+  color: white;
+}
+
+.metric {
+  text-align: center;
+  font-family: "Epilogue", sans-serif;
+}
+
+.counter {
+  display: flex;
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.digit {
+  height: 1em;
+  overflow: hidden;
+}
+
+.digit-stack {
+  will-change: transform;
+}
+
+.digit span {
+  display: block;
+  height: 1em;
+}
+
+.label {
+  letter-spacing: 0.3em;
+  font-size: 0.9rem;
+  color: #9aa0b4;
+}
