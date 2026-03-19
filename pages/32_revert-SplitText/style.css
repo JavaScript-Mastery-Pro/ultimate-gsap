@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&display=swap");
 
 main {
   font-family: "Epilogue", sans-serif;
@@ -14,12 +14,12 @@ main {
 
 .sentence {
   font-size: 1.3rem;
-  font-weight: 400;
   letter-spacing: 0.015em;
-  margin: 0;
 }
 
-/* Words Class */
+/* Visual clarity for split elements */
 .word {
-  border: 1px solid red;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.05);
+  margin-right: 4px;
 }

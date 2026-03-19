@@ -5,6 +5,7 @@ gsap.registerPlugin(SplitText);
 
 const split = new SplitText(".sentence", {
   type: "words",
+  // wordsClass: "word",
 });
 
 gsap.from(split.words, {
@@ -14,3 +15,9 @@ gsap.from(split.words, {
   stagger: 0.12,
   ease: "power2.out",
 });
+
+// gsap.from(".word", {
+//   opacity: 0,
+//   y: 20,
+//   stagger: 0.12,
+// });
