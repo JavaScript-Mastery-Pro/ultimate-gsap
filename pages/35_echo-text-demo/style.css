@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sora:wght@100..800&display=swap");
+
+main {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Oswald", sans-serif;
+}
+
+.stack {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.layer {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  font-size: clamp(6rem, 22vw, 26rem);
+  font-weight: 800;
+  line-height: 1;
+  color: #e8e8e8;
+  white-space: nowrap;
+  user-select: none;
+  will-change: transform;
+}
