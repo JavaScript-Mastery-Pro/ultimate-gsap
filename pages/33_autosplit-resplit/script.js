@@ -15,7 +15,6 @@ button.addEventListener("click", () => {
 // new SplitText(".sentence", {
 //   type: "lines",
 //   linesClass: "line",
-//   autoSplit: true,
 // });
 
 // Animation runs only once
