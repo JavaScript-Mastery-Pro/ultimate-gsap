@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&display=swap");
+
+main {
+  font-family: "Epilogue", sans-serif;
+  color: white;
+}
+
+.demo {
+  padding: 5rem;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+.toggle{
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  transition: all 0.4s ease;
+}
+
+.grid.expanded {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background: #111;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.line {
+  display: block;
+  overflow: hidden;
+}
