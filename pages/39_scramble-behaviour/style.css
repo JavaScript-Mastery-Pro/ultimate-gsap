@@ -1,0 +1,35 @@
+.demo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  background-color: rgb(214, 214, 214);
+  color: black;
+  border-radius: 0.5em;
+}
+
+/* ScrambleText classes */
+.new-text {
+  color: #00ffcc;
+}
+
+.old-text {
+  opacity: 0.3;
+}
