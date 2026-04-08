@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "RuderPlakatLL";
+  src: url("/vd-scroll/RuderPlakatLLTrial-Regular.otf");
+}
+
+main {
+  margin: 0;
+  font-family: "RuderPlakatLL", sans-serif;
+  background: black;
+  color: white;
+  padding: 0;
+}
+
+#nextGenGame {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.context p {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.context h2 {
+  font-size: 120px;
+  text-transform: uppercase;
+  line-height: 0.9;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.scroll-indicator {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  background: #f4fafd;
+  color: black;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
